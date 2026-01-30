@@ -44,6 +44,9 @@ Intersection Observer API
 useStore()
 
 ```
+## 배포
+[vercel 홈페이지](https://vercel.com/)
+
 
 <!-- ## 4단계: 드래그 앤 드롭 및 전역 상태 (Advanced)
 목표: 사용자가 이미지를 드래그하여 자신의 '보드'에 담기, 혹은 직접 이미지 업로드하기.

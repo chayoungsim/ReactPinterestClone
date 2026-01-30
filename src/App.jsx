@@ -22,14 +22,14 @@ function MainFeed() {
     const location = useLocation();
     const [page, setPage] = useState(1);
     const loader = useRef(null);
-    const ACCESS_KEY = "yH5mhqi3eLvZfSFx4dJ6Acu0d89IrLAOVph0lSGZbDs";
+  
 
     const fetchImages = async (pageNum) => {
         try {
             setLoading(true);
             const response = await axios.get("https://api.unsplash.com/photos", {
                 params: {
-                    client_id: ACCESS_KEY,
+                    client_id: import.meta.env.VITE_UNSPLASH_ACCESS_KEY,
                     page: pageNum,
                     per_page: 10,
                 },
